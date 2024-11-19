@@ -1,1 +1,9 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+
+.logo img {
+    transition:all 350ms;
+}
+.logo img:hover{
+    transform:scale(110%,110%) rotate(90deg)
+}
+

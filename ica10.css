@@ -48,3 +48,22 @@
         transform: translate(-100%,0)
     }
 }
+
+.notification{
+    position: relative;
+    transform: translateX(-100vw);
+    animation: slideIn 10s ease infinite;
+    animation-delay: 3s;
+}
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(-100vw)
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-100vw)
+    }
+}

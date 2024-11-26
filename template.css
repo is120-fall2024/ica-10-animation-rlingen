@@ -69,10 +69,14 @@ section#grid-wrapper {
 }
 
 main .center-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
+  grid-template-areas: 
+  'one two three'
+  'four five six';
 }
 
 .center-grid .box {

@@ -21,6 +21,30 @@
     background-size:100% 3px;
 }
 
+.box-5{
+   grid-area: five;
+   animation: switchTo6 2s infinite ease;
+}
 
+.box-6{
+    grid-area: six;
+    animation: switchTo5 2s infinite ease;
+}
 
+@keyframes switchTo6{
+    0%, 100% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(100%,0)
+    }
+}
 
+@keyframes switchTo5 {
+    0%,100% {
+        transform:translate(0,0);
+    }
+    50% {
+        transform: translate(-100%,0)
+    }
+}

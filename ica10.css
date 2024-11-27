@@ -70,7 +70,7 @@
 
 .box-4{
     background-image: linear-gradient(blue, purple);
-    transition: background-image 3s ease-in-out;
+    transition: background-image 5s ease-in-out;
 }
 
 .box-4:hover{
@@ -87,5 +87,25 @@
     }
     100%{
         filter: hue-rotate(360deg);
+    }
+}
+
+.needsRotation {
+    animation-name: rotations;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotations{
+    0%{
+        transform:rotate(0deg)
+    }
+
+    50%{
+        transform:rotate(180deg)
+    }
+    100%{
+        transform:rotate(360deg)
     }
 }

@@ -67,3 +67,25 @@
         transform:translateX(-100vw)
     }
 }
+
+.box-4{
+    background-image: linear-gradient(blue, purple);
+    transition: background-image 3s ease-in-out;
+}
+
+.box-4:hover{
+    animation-name: colorChange;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorChange{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
